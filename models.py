@@ -7,7 +7,8 @@ class Jogos(db.Model):
     console = db.Column(db.String(20), nullable=False)
 
     def __repr__(self):
-        return '<Name %r>' % self.nome
+        return '<Name %r>' % self.name
+
 
 class Usuarios(db.Model):
     nickname = db.Column(db.String(8), primary_key=True)
@@ -15,4 +16,4 @@ class Usuarios(db.Model):
     senha = db.Column(db.String(100), nullable=False)
 
     def __repr__(self):
-        return '<Name %r>' % self.nome
+        return '<Name %r>' % self.name
